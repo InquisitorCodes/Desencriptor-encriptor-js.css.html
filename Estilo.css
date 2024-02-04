@@ -1,0 +1,151 @@
+.titulo {
+    background: url('Sources/Logo-1.png') left;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-color: purple;
+    padding: 20px;
+    margin: auto;
+}
+
+.main {
+    background: url('Sources/wallpaper_7680x4320\ .jpg');
+    justify-content: center;
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 0;
+    border: 0;
+}
+
+.titulo{
+    text-decoration: underline;
+    color: whitesmoke;
+
+}
+h2#txt-msg{
+    vertical-align: middle; /* Puedes ajustar esta propiedad según sea necesario */
+    color: whitesmoke;
+    font-size: 24px;
+}
+
+.container {
+    width: 45%;
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle; /* Puedes ajustar esta propiedad según sea necesario */
+    justify-content: space-between;
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+}
+
+h3, h4 {
+    margin: 0; /* Elimina el margen predeterminado de los encabezados */
+    text-align: center;
+}
+
+
+
+#input-txt {
+    width: calc(50% - 5px); /* Ajusta el ancho según tus necesidades y resta un poco para el espacio entre los elementos */
+    margin-right: 10px; /* Espacio entre los elementos */
+    width: 100%; /* Hacer que el textarea ocupe todo el ancho del contenedor */
+    box-sizing: border-box; /* Incluir padding y border en el ancho total */
+    margin-bottom: 15px; /* Separación entre textarea y botones */
+    padding: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: left;
+    border: 2px solid purple;
+    color: black;
+    background-color: whitesmoke;
+    text-decoration: underline;
+    cursor: text; /* Esto hará que el cursor sea el cursor de texto en lugar del cursor predeterminado */
+    caret-color: purple;
+}
+
+#msg {
+    width: calc(50% - 5px); /* Ajusta el ancho según tus necesidades y resta un poco para el espacio entre los elementos */
+    margin-right: 10px; /* Espacio entre los elementos */
+    width: 100%; /* Hacer que el textarea ocupe todo el ancho del contenedor */
+    box-sizing: border-box; /* Incluir padding y border en el ancho total */
+    margin-bottom: 15px; /* Separación entre textarea y botones */
+    padding: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: left;
+    border: 2px solid purple;
+    color: black;
+    background-color: whitesmoke;
+    text-decoration: underline;
+    cursor: text; /* Esto hará que el cursor sea el cursor de texto en lugar del cursor predeterminado */
+    caret-color: purple;
+}
+
+/* Estilos comunes para los botones */
+#btn-encript {
+    width: 100%; /* Hacer que los botones ocupen todo el ancho del contenedor */
+    padding: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid goldenrod;
+    color: whitesmoke;
+    background-color: goldenrod;
+    text-decoration: underline;
+    margin-bottom: 15px; /* Separación entre los botones */
+}
+
+
+/* Estilos comunes para los botones */
+#btn-desencript{
+    width: 100%; /* Hacer que los botones ocupen todo el ancho del contenedor */
+    padding: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid green;
+    color: whitesmoke;
+    background-color: green;
+    text-decoration: underline;
+    margin-bottom: 15px; /* Separación entre los botones */
+}
+
+#btn-copy{
+    width: 50%; /* Hacer que los botones ocupen todo el ancho del contenedor */
+    padding: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid darkmagenta;
+    color: whitesmoke;
+    background-color: gray;
+    text-decoration: underline;
+    margin-bottom: 15px; /* Separación entre los botones */
+
+}
+
+.footer {
+    background-color: purple;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

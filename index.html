@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Mensaje secreto</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilo.css">
+</head>
+
+<body>
+    <h1 class="titulo">Wj Desencriptador</h1>
+    <main class="main">
+        <section class="form box" id="form-box">
+            <form class="form-box-1" id="form-box-1">
+                <h3 class="container">
+                    <label id="title-txt" for="input-txt"></label>
+                    <textarea cols="30" rows="10" id="input-txt" placeholder="Ingrese el texto aquí, Escriba en minúsculas sin acentos"></textarea>
+                    <input class="btn" type="button" value="Encriptar" id="btn-encript">
+                </h3>
+                
+                <h4 class="container">
+                    <section class="msg box">
+                        <h2 id="txt-msg"></h2>
+                    </section>
+                    <textarea cols="30" rows="10" id="msg" placeholder="Mensaje encriptado"></textarea>
+                    <input class="btn" type="button" value="Desencriptar" id="btn-desencript">
+                    <input type="button" value="Copy" id="btn-copy">
+                </h4>
+            </form>
+        </section>
+    </main>
+
+    <div class="footer">
+        <p>&copy; 2024 Alura next Ed - Todos los derechos reservados</p>
+        <p>Contacto: <a href="mailto:info@tupagina.com">info@tupagina.com</a></p>
+    </div>
+
+    <script src="Encriptar.js"></script>
+    <script src="CopiarPegar.js"></script>
+</body>
+
+</html>
