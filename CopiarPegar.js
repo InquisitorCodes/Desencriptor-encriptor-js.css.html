@@ -1,18 +1,20 @@
 document.addEventListener("DOMContentLoaded", function() {
-    let botonCopy = document.getElementById("btn-copy");
-    botonCopy.addEventListener("click", copiarTexto);
-});
+  document.getElementById("btn-copy").addEventListener("click", function() {
+      var textoACopiarInput = document.getElementById("input-txt").value; // Obtener el texto de la primera textarea
+      var textoACopiarMsg = document.getElementById("msg").value; // Obtener el texto de la segunda textarea
+      var textoACopiar = textoACopiarInput + "\n" + textoACopiarMsg; // Concatenar ambos textos
 
-function copiarTexto() {
-    let textoEncriptado = document.getElementById("msg").value;
-    // Utilizar la API de clipboard para copiar el texto
-    navigator.clipboard.writeText(textoEncriptado)
-        .then(() => {
-            // Éxito al copiar
-            alert("Texto copiado: " + textoEncriptado);
-        })
-        .catch(err => {
-            // Manejar errores
-            console.error('Error al copiar el texto al portapapeles: ', err);
-        });
-}
+      console.log("Texto a copiar:", textoACopiar); // Agregar este mensaje para depurar
+      copiarTextoAlPortapapeles(textoACopiar);
+  });
+
+  function copiarTextoAlPortapapeles(texto) {
+      var elementoTemp = document.createElement("textarea");
+      elementoTemp.value = texto;
+      document.body.appendChild(elementoTemp);
+      elementoTemp.select();
+      document.execCommand("copy");
+      document.body.removeChild(elementoTemp);
+      console.log("Texto copiado al portapapeles:", texto); // Agregar este mensaje para depurar
+  }
+});

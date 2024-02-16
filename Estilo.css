@@ -1,151 +1,179 @@
+header{
+    background-image:url(Sources/wallgat_1920x1200.jpg) ;
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    font-family: sans-serif;
+    padding: 55px 60px; /* Relleno interno del título */
+    font-size: 40px;
+    text-align: center;
+}
+
+
 .titulo {
-    background: url('Sources/Logo-1.png') left;
-    background-repeat: no-repeat;
-    text-align: center;
-    background-color: purple;
-    padding: 20px;
-    margin: auto;
+    max-width: 100%; /* Asegura que el logo no se vuelva más grande que el contenedor padre (header) */
+    height: 100px;
+    color: #c5c5c5;
+    text-decoration: wavy;
+
 }
 
-.main {
-    background: url('Sources/wallpaper_7680x4320\ .jpg');
-    justify-content: center;
-    height: 800px;
+body{
+    background: url(Sources/wallmateeialistic.com_1920x1200.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
+    background-color: black;
+    max-width: 100%;
     padding: 0;
-    border: 0;
+    margin: 0;
+    height: 870px;
 }
 
-.titulo{
-    text-decoration: underline;
-    color: whitesmoke;
+form{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    max-width: 90%;
+
 
 }
-h2#txt-msg{
-    vertical-align: middle; /* Puedes ajustar esta propiedad según sea necesario */
-    color: whitesmoke;
-    font-size: 24px;
+
+.container{
+    /* Otros estilos para el contenedor, como color de fondo, relleno, etc. */
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    width: 100%; /* Ajusta el ancho del contenedor según tus necesidades */
+    padding-top: 50px; /* Ajusta el espacio entre #msg y el contenedor */
+    padding-bottom: 50px; /* Ajusta el espacio entre #input-txt y el contenedor */
 }
 
-.container {
-    width: 45%;
-    padding: 20px;
-    text-align: center;
-    vertical-align: middle; /* Puedes ajustar esta propiedad según sea necesario */
-    justify-content: space-between;
-    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+.conatiner2{
+    flex-direction:row; /* Alinea los elementos verticalmente */
 }
-
-h3, h4 {
-    margin: 0; /* Elimina el margen predeterminado de los encabezados */
-    text-align: center;
-}
-
-
 
 #input-txt {
-    width: calc(50% - 5px); /* Ajusta el ancho según tus necesidades y resta un poco para el espacio entre los elementos */
-    margin-right: 10px; /* Espacio entre los elementos */
-    width: 100%; /* Hacer que el textarea ocupe todo el ancho del contenedor */
-    box-sizing: border-box; /* Incluir padding y border en el ancho total */
-    margin-bottom: 15px; /* Separación entre textarea y botones */
-    padding: 10px;
-    font-size: 16px;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 5px;
+    /* Estilos para el campo de entrada */
+    opacity: 0.4;
+    background-size: cover;
+    background-image: url(Sources/wallgat_1920x1200.jpg);
+    font-size: 1rem; /* Ajusta el tamaño del texto según sea necesario */
     text-align: left;
-    border: 2px solid purple;
-    color: black;
-    background-color: whitesmoke;
-    text-decoration: underline;
-    cursor: text; /* Esto hará que el cursor sea el cursor de texto en lugar del cursor predeterminado */
-    caret-color: purple;
+    border: 0.12rem solid; /* Ajusta el borde según sea necesario */
+    color: white;
+    border-color: aqua;
+    background-color: transparent;
+    text-decoration: underline; /* Subrayado al pasar el ratón por encima */
+    border-radius: 0.31rem; /* Ajusta el radio de borde según sea necesario */
+    resize: none; /* Evita que el usuario pueda redimensionar el textarea */
+    cursor: text; /* Cambia el cursor a un marcador de texto */
+    justify-content: space-between; /* Espacio entre los elementos */
 }
 
-#msg {
-    width: calc(50% - 5px); /* Ajusta el ancho según tus necesidades y resta un poco para el espacio entre los elementos */
-    margin-right: 10px; /* Espacio entre los elementos */
-    width: 100%; /* Hacer que el textarea ocupe todo el ancho del contenedor */
-    box-sizing: border-box; /* Incluir padding y border en el ancho total */
-    margin-bottom: 15px; /* Separación entre textarea y botones */
-    padding: 10px;
-    font-size: 16px;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 5px;
+#msg{
+    /* Estilos para el campo de entrada */
+    opacity: 0.4;
+    background-size: cover;
+    background-image: url(Sources/wallgat_1920x1200.jpg);
+    font-size: 1rem; /* Ajusta el tamaño del texto según sea necesario */
     text-align: left;
-    border: 2px solid purple;
-    color: black;
-    background-color: whitesmoke;
-    text-decoration: underline;
-    cursor: text; /* Esto hará que el cursor sea el cursor de texto en lugar del cursor predeterminado */
-    caret-color: purple;
+    border: 0.12rem solid; /* Ajusta el borde según sea necesario */
+    color: white;
+    border-color: aqua;
+    background-color: transparent;
+    text-decoration: underline; /* Subrayado al pasar el ratón por encima */
+    border-radius: 0.31rem; /* Ajusta el radio de borde según sea necesario */
+    resize: none; /* Evita que el usuario pueda redimensionar el textarea */
+    cursor: text; /* Cambia el cursor a un marcador de texto */
+    margin-top: 75px;
+    justify-content: space-between; /* Espacio entre los elementos */
 }
 
-/* Estilos comunes para los botones */
-#btn-encript {
-    width: 100%; /* Hacer que los botones ocupen todo el ancho del contenedor */
-    padding: 10px;
-    font-size: 16px;
-    text-decoration: none;
+::placeholder{
+    /* Estilos para el texto de marcador de posición */
+    opacity: 1; /* Hacer el texto de marcador de posición completamente opaco */
+    color: white; /* Color del texto de marcador de posición */
+}
+
+#btn-encript{
+    background: url(Sources/wallmateeialistic.com_1920x1200.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+    color: whitesmoke; /* Color del texto */
     cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-    border: 2px solid goldenrod;
-    color: whitesmoke;
-    background-color: goldenrod;
-    text-decoration: underline;
-    margin-bottom: 15px; /* Separación entre los botones */
+    padding: 5px 10px; /* Tamaño original */
+    font-size: 16px; /* Tamaño original de la fuente */
+    transition: all 0.9s ease; /* Transición suave */
+    margin-right: 10px; /* Espacio entre los botones */
+    gap: 10px; /* Espacio entre los botones */
+    display: inline-block; /* Permite que el botón se comporte como un bloque */
+    position: absolute; /* Establece la posición absoluta */
 }
 
-
-/* Estilos comunes para los botones */
 #btn-desencript{
-    width: 100%; /* Hacer que los botones ocupen todo el ancho del contenedor */
-    padding: 10px;
-    font-size: 16px;
-    text-decoration: none;
+    background: url(Sources/wallmateeialistic.com_1920x1200.jpg);
+    background-size: cover;
+    color: whitesmoke; /* Color del texto */
     cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-    border: 2px solid green;
-    color: whitesmoke;
-    background-color: green;
-    text-decoration: underline;
-    margin-bottom: 15px; /* Separación entre los botones */
+    padding: 5px 10px; /* Tamaño original */
+    font-size: 16px; /* Tamaño original de la fuente */
+    transition: all 0.9s ease; /* Transición suave */
+    margin-right: 10px; /* Espacio entre los botones */
+    gap: 0; /* Espacio entre los botones */
+    display: flex;
+    display: inline-block;
 }
+
+@media screen and (max-width: 600px) {
+    .boton {
+      font-size: 14px; /* Disminuye el tamaño de fuente en pantallas pequeñas */
+      padding: 8px 16px; /* Ajusta el espaciado interno en pantallas pequeñas */
+    }
+  }
 
 #btn-copy{
-    width: 50%; /* Hacer que los botones ocupen todo el ancho del contenedor */
-    padding: 10px;
-    font-size: 16px;
-    text-decoration: none;
+    background: url(Sources/wallmateeialistic.com_1920x1200.jpg);
+    background-size: cover;
+    color: whitesmoke; /* Color del texto */
     cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-    border: 2px solid darkmagenta;
-    color: whitesmoke;
-    background-color: gray;
-    text-decoration: underline;
-    margin-bottom: 15px; /* Separación entre los botones */
-
+    padding: 5px 10px; /* Tamaño original */
+    margin-right: 10px; /* Espacio entre los botones */
+    font-size: 16px; /* Tamaño original de la fuente */
+    transition: all 0.9s ease; /* Transición suave */
+    display: inline-block;
+    gap: 0; /* Espacio entre los botones */
 }
 
+#btn-encript:hover, #btn-desencript:hover, #btn-copy:hover {
+    /* Estilos del botón cuando se coloca el cursor sobre él */
+    padding: 6px 12px; /* Nuevo tamaño */
+    font-size: 18px; /* Nuevo tamaño de la fuente */
+}
+
+/* Estilos para el pie de página */
 .footer {
-    background-color: purple;
-    color: #fff;
-    padding: 20px;
+    background-image: url(Sources/wallgat_1920x1200.jpg);
+    background-color: black; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    background-size: cover;
     text-align: center;
+    position: fixed; bottom: 0;
+    width: 100%;
+    max-height: 100px;
+
 }
 
-.footer a {
-    color: #fff;
-    text-decoration: none;
+#logo{
+    max-width: 100%; /* Asegura que el logo no se vuelva más grande que el contenedor padre (header) */
+    width: 300px;
+    height: 100px;
+    display: inline-block;
 }
 
-.footer a:hover {
-    text-decoration: underline;
+p{
+    text-align: center; /* Centra el texto horizontalmente */
+    margin:0%;
 }
+
+a{
+    color: aqua;
+}
+
