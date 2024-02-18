@@ -1,7 +1,7 @@
 header{
     background-image:url(Sources/wallgat_1920x1200.jpg) ;
     background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
-    font-family: sans-serif;
+    font-family: fantasy;
     padding: 55px 60px; /* Relleno interno del título */
     font-size: 40px;
     text-align: center;
@@ -10,7 +10,6 @@ header{
 
 .titulo {
     max-width: 100%; /* Asegura que el logo no se vuelva más grande que el contenedor padre (header) */
-    height: 100px;
     color: #c5c5c5;
     text-decoration: wavy;
 
@@ -41,13 +40,26 @@ form{
     display: flex;
     flex-direction: column; /* Alinea los elementos verticalmente */
     width: 100%; /* Ajusta el ancho del contenedor según tus necesidades */
-    padding-top: 50px; /* Ajusta el espacio entre #msg y el contenedor */
-    padding-bottom: 50px; /* Ajusta el espacio entre #input-txt y el contenedor */
+    padding-top: 40px; /* Ajusta el espacio entre #msg y el contenedor */
+    gap: 1px; /* Separar las textareas con un espacio entre ellas */
 }
 
-.conatiner2{
-    flex-direction:row; /* Alinea los elementos verticalmente */
+.button-container{
+    display: flex;
+    gap: 10px; /* Espacio entre los contenedores */
+    padding-bottom: 30px;
 }
+
+.textarea-container{
+    padding-top: 1px; /* Ajusta el espacio entre #input-txt y el contenedor */
+    gap: 10px; /* Espacio entre los contenedores */
+}
+
+.textarea-container2{
+    padding-top: 1px; /* Ajusta el espacio entre #input-txt y el contenedor */
+    gap: 10px; /* Espacio entre los contenedores */
+}
+
 
 #input-txt {
     /* Estilos para el campo de entrada */
@@ -57,14 +69,16 @@ form{
     font-size: 1rem; /* Ajusta el tamaño del texto según sea necesario */
     text-align: left;
     border: 0.12rem solid; /* Ajusta el borde según sea necesario */
+    border-radius: 15px;
     color: white;
-    border-color: aqua;
+    border-color: #88D8C0;
     background-color: transparent;
     text-decoration: underline; /* Subrayado al pasar el ratón por encima */
-    border-radius: 0.31rem; /* Ajusta el radio de borde según sea necesario */
     resize: none; /* Evita que el usuario pueda redimensionar el textarea */
     cursor: text; /* Cambia el cursor a un marcador de texto */
     justify-content: space-between; /* Espacio entre los elementos */
+    transition: opacity 0.3s ease; /* Transición suave de la opacidad */
+    width: 100%;
 }
 
 #msg{
@@ -75,15 +89,21 @@ form{
     font-size: 1rem; /* Ajusta el tamaño del texto según sea necesario */
     text-align: left;
     border: 0.12rem solid; /* Ajusta el borde según sea necesario */
+    border-radius: 15px;
     color: white;
-    border-color: aqua;
+    border-color: #88D8C0;
     background-color: transparent;
     text-decoration: underline; /* Subrayado al pasar el ratón por encima */
-    border-radius: 0.31rem; /* Ajusta el radio de borde según sea necesario */
     resize: none; /* Evita que el usuario pueda redimensionar el textarea */
     cursor: text; /* Cambia el cursor a un marcador de texto */
-    margin-top: 75px;
     justify-content: space-between; /* Espacio entre los elementos */
+    transition: opacity 0.3s ease; /* Transición suave de la opacidad */
+    width: 100%;
+}
+
+#input-txt:hover, #msg:hover{
+    opacity: 1.0;
+    color: #fff;
 }
 
 ::placeholder{
@@ -93,32 +113,35 @@ form{
 }
 
 #btn-encript{
-    background: url(Sources/wallmateeialistic.com_1920x1200.jpg);
+    background-color: #88D8C0;
     background-size: cover;
     box-sizing: border-box;
-    color: whitesmoke; /* Color del texto */
+    color: black; /* Color del texto */
+    cursor: pointer;
+    padding: 5px 10px; /* Tamaño original */
+    font-size: 16px; /* Tamaño original de la fuente */
+    transition: all 0.9s ease; /* Transición suave */
+    margin-right: 10px; /* Espacio entre los botones */
+    border-radius: 15px;
+    gap: 10px; /* Espacio entre los botones */
+    display: inline-block; /* Permite que el botón se comporte como un bloque */
+    position: relative;
+}
+
+
+#btn-desencript{
+    background-color: #88D8C0;
+    background-size: cover;
+    color: black; /* Color del texto */
+    border-radius: 15px;
     cursor: pointer;
     padding: 5px 10px; /* Tamaño original */
     font-size: 16px; /* Tamaño original de la fuente */
     transition: all 0.9s ease; /* Transición suave */
     margin-right: 10px; /* Espacio entre los botones */
     gap: 10px; /* Espacio entre los botones */
-    display: inline-block; /* Permite que el botón se comporte como un bloque */
-    position: absolute; /* Establece la posición absoluta */
-}
-
-#btn-desencript{
-    background: url(Sources/wallmateeialistic.com_1920x1200.jpg);
-    background-size: cover;
-    color: whitesmoke; /* Color del texto */
-    cursor: pointer;
-    padding: 5px 10px; /* Tamaño original */
-    font-size: 16px; /* Tamaño original de la fuente */
-    transition: all 0.9s ease; /* Transición suave */
-    margin-right: 10px; /* Espacio entre los botones */
-    gap: 0; /* Espacio entre los botones */
-    display: flex;
     display: inline-block;
+    position: relative;
 }
 
 @media screen and (max-width: 600px) {
@@ -128,23 +151,28 @@ form{
     }
   }
 
-#btn-copy{
-    background: url(Sources/wallmateeialistic.com_1920x1200.jpg);
+#btn-copy, #btn-copy2{
+    background-color: #88D8C0;
     background-size: cover;
-    color: whitesmoke; /* Color del texto */
+    color: black; /* Color del texto */
     cursor: pointer;
     padding: 5px 10px; /* Tamaño original */
     margin-right: 10px; /* Espacio entre los botones */
     font-size: 16px; /* Tamaño original de la fuente */
+    border-radius: 15px;
     transition: all 0.9s ease; /* Transición suave */
     display: inline-block;
     gap: 0; /* Espacio entre los botones */
+    position: relative;
+
 }
 
-#btn-encript:hover, #btn-desencript:hover, #btn-copy:hover {
+#btn-encript:hover, #btn-desencript:hover, #btn-copy:hover, #btn-copy2:hover{
     /* Estilos del botón cuando se coloca el cursor sobre él */
     padding: 6px 12px; /* Nuevo tamaño */
     font-size: 18px; /* Nuevo tamaño de la fuente */
+    background-color: #621176;
+    color: white;
 }
 
 /* Estilos para el pie de página */
@@ -174,6 +202,6 @@ p{
 }
 
 a{
-    color: aqua;
+    color: #88D8C0;
 }
 
